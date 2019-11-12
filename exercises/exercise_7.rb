@@ -9,4 +9,7 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
-# Your code goes here ...
+@sun = Store.create(name: 'Sun')
+@sun.errors.full_messages.each do |msg|
+  puts msg
+end
